@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+
+<body>
+    <script src="script.js"></script>
+    <!-- <h1>영화 리스트</h1>
+    <div id="move-infor"></div>
+    <div id="move-vote"></div> -->
+    <section class="top">
+        <div class="bg">
+            <h1>Search for Movie</h1>
+            <form class="search" onsubmit="handleSearch(event)">
+
+                <input type="text" id="search-input" placeholder="영화 제목을 검색해 보세요">
+                <button class="button" onclick="search()">
+                    <img src="image/Group 1.png">
+                </button>
+            </form>
+        </div>
+
+    </section>
+    <section class="contents">
+        <div id="movie-container">
+
+        </div>
+    </section>
+
+</body>
+
+</html>
