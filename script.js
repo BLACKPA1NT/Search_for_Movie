@@ -8,9 +8,9 @@ const options = {
 
 
 const search_form = document.querySelector('#search_form')
-search_form.addEventListener('submit', function (e) {
-    e.preventDefault()
-    fetchMovies(e.target[0].value);
+search_form.addEventListener('submit', function (event) {
+    event.preventDefault()
+    fetchMovies(event.target[0].value);
 })
 
 function fetchMovies(keyword = '') {
