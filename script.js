@@ -13,9 +13,11 @@ search_form.addEventListener('submit', function (event) {
     fetchMovies(event.target[0].value);
 })
 
+const API_KEY = `b072872513d21eb01d0f971be277d247`;
+
 function fetchMovies(keyword = '') {
     fetch(
-        "https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1",
+        `https://api.themoviedb.org/3/movie/popular?language=ko-KR&page=1`,
         options,
     )
         .then((response) => response.json())
